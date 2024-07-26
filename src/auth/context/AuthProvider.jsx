@@ -13,7 +13,7 @@ const init = () => {
 
 export const AuthProvider = ({ children }) => {
  
-  const [ authState, dispatch ] = useReducer(authReducer, {}, init)
+  const [ authState, dispatch ] = useReducer( authReducer, {}, init )
 
   const login = ( name = '' ) => {
 
@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
       type: types.login,
       payload: user
     }
-    localStorage.setItem('user', JSON.stringify(action.payload))
+    localStorage.setItem('user', JSON.stringify( user ))
     dispatch(action)
   }
 
