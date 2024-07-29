@@ -1,7 +1,6 @@
-import { render, screen, fireEvent, renderHook, act } from "@testing-library/react"
+import { render, screen, fireEvent } from "@testing-library/react"
 import { MemoryRouter } from "react-router-dom"
 import { SearchHero } from "../../../src/heroes/pages/SearchHero"
-import { useForm } from "../../../src/hooks/useForm";
 
 
 const mockedUseNavigate = jest.fn();
