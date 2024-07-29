@@ -60,7 +60,7 @@ export const Navbar = () => {
                     </span>
                     <button
                         onClick={onLogOut}
-                      className='nav-item nav-link btn'
+                        className='nav-item nav-link btn'
                     >
                       LogOut
                     </button>
